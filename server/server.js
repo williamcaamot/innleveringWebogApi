@@ -12,6 +12,7 @@ app.use(express.static("../client/dist/"));
 
 
 
+
 app.use((req, res, next) => {
     res.sendFile(path.resolve("../client/dist/index.html"));
 });
