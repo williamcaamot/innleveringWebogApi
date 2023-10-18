@@ -10,7 +10,7 @@
     "postinstall": "npm run install:client && npm run install:server",
     "install:client": "cd client && npm install --include=dev",
     "install:server": "cd server && npm install",
-    "build": "npm run check && cd client && npx parcel build index.html",
+    "build": "npm run prettier && cd client && npx parcel build index.html",
     "start": "cd server && node server.js",
     "check": "prettier --check .",
     "prettier": "prettier --write ."
