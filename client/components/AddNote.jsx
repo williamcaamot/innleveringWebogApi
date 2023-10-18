@@ -60,7 +60,12 @@ export function AddNote(props) {
             >Legg til notat</button>
 
             <button
-                onClick={event => setDisplayMode("none")}
+                onClick={() => {
+                    setDisplayMode("none");
+                    setTtitle("");
+                    setNote("");
+                }
+            }
             >Avbryt</button>
 
 

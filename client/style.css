@@ -21,7 +21,7 @@ nav .divider{
 
 }
 h1, h2, h3, h4, p, a{
-    font-family: arial;
+    font-family: arial, serif;
 }
 
 body{
@@ -50,10 +50,9 @@ body{
 
 #addNote{
     position: fixed;
-    bottom: 1em;
-    right: 1em;
-    /*padding: 50px 75px 50px 75px;*/
-    /*padding: 1em 1.2em 1em 1.2em;*/
+    bottom: 0.3em;
+    right: 0.3em;
+    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
     width: 15vh;
     height: 15vh;
     display: flex;

@@ -15,7 +15,7 @@ app.use(cookieParser(process.env.COOKIE_SECRET)); //Cookie secret to do some sim
 
 let items = [
     {id: 0, title: "First note", content: " This is the first note"},
-    {id: 1, title: "First note", content: " This is the second note"},
+    {id: 1, title: "Second note", content: " This is the second note"},
 ]
 
 app.get("/api/v1/note", (req, res) => {
