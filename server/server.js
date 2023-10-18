@@ -2,6 +2,8 @@ import express from "express";
 import path from "path";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
+import {MongoClient} from "mongodb";
+import * as db from "./db.js";
 
 dotenv.config();
 const app = express();
@@ -12,6 +14,8 @@ app.use(cookieParser(process.env.COOKIE_SECRET)); //Cookie secret to do some sim
 //////////////////////////////////////////////////////
 ///////// API ENDPOINTS GO HERE               ////////
 //////////////////////////////////////////////////////
+
+
 
 let items = [
   { id: 0, title: "First note", content: " This is the first note" },
@@ -32,6 +36,9 @@ app.post("/api/v1/note", (req, res) => {
   res.json(newNote);
 });
 
+
+
+
 //////////////////////////////////////////////////////
 ///////// NO API ENDPOINTS AFTER THIS SECTION ////////
 //////////////////////////////////////////////////////
@@ -42,12 +49,16 @@ app.get("*", (req, res) => {
 });
 
 
-if (process.env.NODE_ENV !== 'test') {
-  app.listen(process.env.PORT || 2000, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
-}
 
 
+db.connect().then(() => {
+  if (process.env.NODE_ENV !== 'test') {
+    app.listen(process.env.PORT || 2000, () => {
+      console.log(`Server is running`);
+    });
+  }
+}).catch(err => {
+  console.error("Failed to connect to MongoDB:", err);
+});
 
 export default app;

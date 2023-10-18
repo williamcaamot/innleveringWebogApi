@@ -11,6 +11,6 @@ Heroku link: https://innleveringwebogapi-1ae02f65ca46.herokuapp.com/
 [X] Applikasjonen bør ha et API i Express for å opprette og liste objekter\
 [X] Applikasjonen bør være satt opp til å bruke Prettier for å formatere kode\
 [] Applikasjonen kan inneholde tester for frontend kode i React\
-[] Applikasjonen kan inneholde tester for backend kode i Express\
+[X] Applikasjonen kan inneholde tester for backend kode i Express\
 [] Applikasjonen kan benytte TypeScript i stedet for JavaScript\
 [] Applikasjonen kan lagre data i MongoDB
