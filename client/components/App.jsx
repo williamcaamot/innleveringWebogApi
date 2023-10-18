@@ -2,8 +2,9 @@ import React from "react";
 
 function App(){
     return<>
-       <h1>Hello</h1>
-        <p>dawpoijdw</p>
+        <header>
+            <h1></h1>
+        </header>
     </>
 }
 
