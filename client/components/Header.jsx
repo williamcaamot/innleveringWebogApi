@@ -1,7 +1,7 @@
 export function Header() {
     return <>
         <div id={"header"}>
-            <h1>To do app</h1>
+            <h1>Note keeper app</h1>
 
 
         </div>
