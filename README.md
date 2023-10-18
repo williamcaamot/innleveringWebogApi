@@ -1,6 +1,6 @@
 By Markus Hagen & William Coucheron-Aamot
 
-Heroku linK: https://innleveringwebogapi-1ae02f65ca46.herokuapp.com/
+Heroku link: https://innleveringwebogapi-1ae02f65ca46.herokuapp.com/
 
 [X] Innleveringen skal leveres med GitHub classroom. Bruk følgende link til å opprette et repository: https://classroom.github.com/a/9O-uluRb
 [X] Links to an external site.\

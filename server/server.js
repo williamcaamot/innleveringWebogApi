@@ -41,6 +41,13 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../client/dist/index.html"));
 });
 
-app.listen(process.env.PORT || 2000, () => {
-  console.log("Server is running on port 3000");
-});
+
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(process.env.PORT || 2000, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
+
+
+export default app;
