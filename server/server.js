@@ -2,7 +2,6 @@ import express from "express";
 import path from "path";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
-import {MongoClient} from "mongodb";
 import * as db from "./db.js";
 
 dotenv.config();
@@ -22,16 +21,25 @@ let items = [
   { id: 1, title: "Second note", content: " This is the second note" },
 ];
 
-app.get("/api/v1/note", (req, res) => {
-  res.json(items);
+app.get("/api/v1/note", async(req, res) => {
+  console.log("Someone gett meals from DB");
+  const data = db.getNotesCollection();
+  const notes = await data.find().toArray();
+  res.json(notes);
+  console.log(`[IP: ${req.ip} REFERRER: ${req.referrer}] got all meals`)
 });
 
-app.post("/api/v1/note", (req, res) => {
+app.post("/api/v1/note", async (req, res) => {
+  const notescollection = db.getNotesCollection();
   const newNote = {
     id: items.length + 1,
     title: req.body.title,
     content: req.body.content,
   };
+
+  const result = await notescollection.insertOne(newNote);
+
+
   items.push(newNote);
   res.json(newNote);
 });

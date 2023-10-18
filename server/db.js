@@ -15,7 +15,7 @@ const connect = async () => {
 }
 
 const getNotesCollection = () => {
-    return mealsCollection;
+    return notesCollection;
 }
 
 export { connect, notesCollection, getNotesCollection };
