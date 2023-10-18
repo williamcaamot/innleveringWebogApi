@@ -15,18 +15,23 @@ app.use(cookieParser(process.env.COOKIE_SECRET)); //Cookie secret to do some sim
 
 let items = [
     {id: 0, title: "First note", content: " This is the first note"},
-    {id: 1, title: "First note", content: " This is the first note"},
+    {id: 1, title: "First note", content: " This is the second note"},
 ]
 
-app.get("/api/v1/todoitems", (req, res) => {
+app.get("/api/v1/note", (req, res) => {
 
     res.json(items);
 
 });
 
-app.post("/api/v1/todoitems", (req, res) => {
-
-
+app.post("/api/v1/note", (req, res) => {
+    const newNote = {
+        id: items.length + 1,
+        title: req.body.title,
+        content: req.body.content
+    }
+    items.push(newNote);
+    res.json(newNote);
 
 
 })

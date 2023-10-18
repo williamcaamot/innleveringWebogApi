@@ -7,7 +7,7 @@ export function Notes() {
 
 
     async function getItems(){
-        const res = await fetch("/api/v1/todoitems");
+        const res = await fetch("/api/v1/note");
         const data = await res.json();
         await setToDoItems(data);
         await console.log(data);
@@ -35,7 +35,9 @@ export function Notes() {
 
     </div>
 
-        <AddNote/>
+        <AddNote
+        refreshNotes={getItems}
+        />
 
 
 
