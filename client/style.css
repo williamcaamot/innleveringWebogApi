@@ -1,98 +1,102 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
-
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 1em;
-    justify-content: space-around;
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  justify-content: space-around;
 }
 
-nav .divider{
-    flex: 1; /* Take the rest space available */
+nav .divider {
+  flex: 1; /* Take the rest space available */
 }
 
-#header{
-    background-color: #f5ba13;
-    padding: 20px;
-    color: white;
-
+#header {
+  background-color: #f5ba13;
+  padding: 20px;
+  color: white;
 }
-h1, h2, h3, h4, p, a{
-    font-family: arial, serif;
-}
-
-body{
-    background-color: #eee;
-}
-
-#todoitems{
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap:2em;
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: arial, serif;
 }
 
-.note{
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
-    width: 250px;
-    background-color: #ffffff;
-
+body {
+  background-color: #eee;
 }
 
-.noteHeader{
-    font-weight: bold;
+#todoitems {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
-#addNote{
-    position: fixed;
-    bottom: 0.3em;
-    right: 0.3em;
-    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
-    width: 15vh;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1000px;
-    font-size: 5em;
-    background-color: #f5ba13;
-    color: white;
-    cursor: pointer;
-}
-#addNote:hover{
-    background-color: #c29004;
+.note {
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
+  width: 250px;
+  background-color: #ffffff;
 }
 
-#addNoteForm{
-    position: fixed;
-    border-radius: 15px;
-    top: 50%;
-    left: 50%;
-    padding: 40px;
-    background-color: white;
-    transform: translate(-50%, -50%);
-    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
-    min-width: 350px;
+.noteHeader {
+  font-weight: bold;
 }
 
-#addNoteForm input, button, textarea{
-    width: 100%;
+#addNote {
+  position: fixed;
+  bottom: 0.3em;
+  right: 0.3em;
+  box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
+  width: 15vh;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  font-size: 5em;
+  background-color: #f5ba13;
+  color: white;
+  cursor: pointer;
 }
-#addNoteForm button{
-    background-color: #f5ba13;
-    border: 0;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px; /* TODO Replace with something else than margin*/
+#addNote:hover {
+  background-color: #c29004;
 }
-#addNoteForm button:hover{
-    background-color: #c29004;
+
+#addNoteForm {
+  position: fixed;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
+  min-width: 350px;
+}
+
+#addNoteForm input,
+button,
+textarea {
+  width: 100%;
+}
+#addNoteForm button {
+  background-color: #f5ba13;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px; /* TODO Replace with something else than margin*/
+}
+#addNoteForm button:hover {
+  background-color: #c29004;
 }

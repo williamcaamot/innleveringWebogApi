@@ -4,19 +4,16 @@
   "main": "hello.js",
   "type": "module",
   "scripts": {
-
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npx parcel watch index.html",
     "dev:server": "cd server && npx nodemon server.js",
-
     "postinstall": "npm run install:client && npm run install:server",
     "install:client": "cd client && npm install --include=dev",
     "install:server": "cd server && npm install",
-
-    "build": "cd client && npx parcel build index.html",
-    "start": "cd server && node server.js"
-
-
+    "build": "npm run check && cd client && npx parcel build index.html",
+    "start": "cd server && node server.js",
+    "check": "prettier --check .",
+    "prettier": "prettier --write ."
   },
   "author": "",
   "license": "ISC",
