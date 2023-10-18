@@ -4,6 +4,7 @@
   "main": "hello.js",
   "type": "module",
   "scripts": {
+
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npx parcel watch index.html",
     "dev:server": "cd server && npx nodemon server.js",
