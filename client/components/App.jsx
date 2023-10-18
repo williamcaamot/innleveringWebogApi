@@ -1,6 +1,5 @@
 import {BrowserRouter} from "react-router-dom";
-
-
+import {Header} from "./Header.jsx";
 
 
 function App(){
@@ -8,7 +7,9 @@ function App(){
 
 
     return<BrowserRouter>
-        <h1>TO DO APP</h1>
+        <Header/>
+
+
     </BrowserRouter>
 }
 
