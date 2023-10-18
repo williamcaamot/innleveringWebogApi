@@ -76,7 +76,23 @@ body{
     padding: 40px;
     background-color: white;
     transform: translate(-50%, -50%);
+    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
+    min-width: 350px;
 }
-#addNoteForm{
 
+#addNoteForm input, button, textarea{
+    width: 100%;
+}
+#addNoteForm button{
+    background-color: #f5ba13;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px; /* TODO Replace with something else than margin*/
+}
+#addNoteForm button:hover{
+    background-color: #c29004;
 }

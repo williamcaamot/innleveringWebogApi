@@ -43,14 +43,15 @@ export function AddNote(props) {
             style={{display: displayMode}}
             id={"addNoteForm"}
         >
-            <h2>Create new note</h2>
-            <p>Title: <input
+            <h2>Add new note</h2>
+            <br/>
+            <p>Title: <br/><input
             value={title}
             onInput={e => setTtitle(e.target.value)}
 
             /></p>
             <br/>
-            <p>Note content: <textarea
+            <p>Note content: <br/><textarea
             value={note}
             onInput={e => setNote(e.target.value)}
             /></p>
