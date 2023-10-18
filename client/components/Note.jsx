@@ -6,7 +6,8 @@ function Note(props){
 
     return<>
         <div className={"note"}>
-            <p>{props.title}</p>
+            <p className={"noteHeader"}>{props.title}</p>
+            <br/>
             <p>{props.content}</p>
 
         </div>

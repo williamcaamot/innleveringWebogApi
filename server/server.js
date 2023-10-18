@@ -24,6 +24,13 @@ app.get("/api/v1/todoitems", (req, res) => {
 
 });
 
+app.post("/api/v1/todoitems", (req, res) => {
+
+
+
+
+})
+
 
 
 

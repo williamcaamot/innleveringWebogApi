@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import Note from "./Note.jsx";
+import {AddNote} from "./AddNote.jsx";
 
 export function Notes() {
     const [toDoItems, setToDoItems] = useState([])
@@ -33,6 +34,8 @@ export function Notes() {
         />)}
 
     </div>
+
+        <AddNote/>
 
 
 

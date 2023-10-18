@@ -31,14 +31,40 @@ body{
 #todoitems{
     padding: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap:2em;
 }
 
 .note{
-    padding: 20px;
+    padding: 25px;
     border-radius: 15px;
-    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.71);
+    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.22);
     width: 250px;
     background-color: #ffffff;
 
+}
+
+.noteHeader{
+    font-weight: bold;
+}
+
+#addNote{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    /*padding: 50px 75px 50px 75px;*/
+    /*padding: 1em 1.2em 1em 1.2em;*/
+    width: 15vh;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    font-size: 5em;
+    background-color: #f5ba13;
+    color: white;
+    cursor: pointer;
+}
+#addNote:hover{
+    background-color: #c29004;
 }
