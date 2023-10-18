@@ -13,4 +13,4 @@ Heroku link: https://innleveringwebogapi-1ae02f65ca46.herokuapp.com/
 [] Applikasjonen kan inneholde tester for frontend kode i React\
 [X] Applikasjonen kan inneholde tester for backend kode i Express\
 [] Applikasjonen kan benytte TypeScript i stedet for JavaScript\
-[] Applikasjonen kan lagre data i MongoDB
+[X] Applikasjonen kan lagre data i MongoDB
