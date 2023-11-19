@@ -12,6 +12,9 @@ export function Notes() {
     await console.log(data);
   }
 
+
+
+
   useEffect(() => {
     getItems();
   }, []);
