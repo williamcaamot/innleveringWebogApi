@@ -1,16 +1,21 @@
-By Markus Hagen & William Coucheron-Aamot
+# pg6301-valgfri-innlevering-template
 
-Heroku link: https://innleveringwebogapi-1ae02f65ca46.herokuapp.com/
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/9O-uluRb)
 
-[X] Innleveringen skal leveres med GitHub classroom. Bruk følgende link til å opprette et repository: https://classroom.github.com/a/9O-uluRb
-[X] Links to an external site.\
-[X] Applikasjonen skal deployes på Heroku og dere skal legge inn link til Heroku-applikasjonen i README-filen i Github repository\
-[X] Applikasjonen skal ha en React komponent som lister objekter (for eksempel "todo-oppgaver")\
-[X] Applikasjonen skal ha en React komponent som lar brukeren opprette nye objekter (for eksempel "todo-oppgave")\
-[X] Github repository skal ha en korrekt .gitignore-fil og ingen store filer (for eksempel `node_modules`) skal være sjekket inn på Git\
-[X] Applikasjonen bør ha et API i Express for å opprette og liste objekter\
-[X] Applikasjonen bør være satt opp til å bruke Prettier for å formatere kode\
-[] Applikasjonen kan inneholde tester for frontend kode i React\
-[X] Applikasjonen kan inneholde tester for backend kode i Express\
-[] Applikasjonen kan benytte TypeScript i stedet for JavaScript\
-[X] Applikasjonen kan lagre data i MongoDB
+VIKTIG: ANGI LINK TIL HEROKU REPOSITORY
+
+I innleveringen skal dere lage et program med React og Express som lar brukeren opprette nye tasks og liste eksisterende tasks. (Det er lov å tilpasse oppgaven til noe du selv har laget)
+
+(Kryss av det dere har gjennomført. Erstatt eventuelt ordet "tasks")
+
+* [ ] Applikasjonen har en korrekt `.gitignore`-fil og det finnes ingen passord eller store filer i Git-historikken
+* [ ] Applikasjonen har en React komponent som lister tasks
+* [ ] Applikasjonen har en React komponent som lar brukeren opprette nye tasks
+* [ ] Applikasjonen er deployet på Heroku og README-filen har link til Heroku applikasjonen
+* [ ] Applikasjonen har et API i Express for å opprette og liste tasks (ikke påkrevd)
+* [ ] Applikasjonen er satt opp til å bruke Prettier for å formatere kode (ikke påkrevd)
+* [ ] Applikasjonen har tester for frontend kode i React (valgfritt)
+* [ ] Applikasjonen har tester for backend kode i Express (valgfritt)
+* [ ] Applikasjonen bruker TypeScript for frontend-kode (valgfritt)
+* [ ] Applikasjonen bruker TypeScript for backend-kode (valgfritt)
+* [ ] Applikasjonen lagrer tasks i MongoDB (valgfritt)
